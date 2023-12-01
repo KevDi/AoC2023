@@ -1,0 +1,9 @@
+{
+    "version": 4,
+    "vendor": {
+        "conan": {}
+    },
+    "include": [
+        "/home/kev/Programming/cpp/AoC2023/build/Debug/generators/CMakePresets.json"
+    ]
+}
