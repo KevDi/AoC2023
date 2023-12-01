@@ -31,7 +31,7 @@ add_custom_command(
 )
 
 include(GoogleTest)
-gtest_discover_tests(day01_TEST)
+gtest_discover_tests(day01_TEST WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 
 add_executable(day01_MAIN day01_main.cpp)
 
