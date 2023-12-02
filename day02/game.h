@@ -11,6 +11,7 @@ public:
     int blue() const;
     int green() const;
     int red() const;
+    int power() const;
 
     bool is_valid(int red, int green, int blue) const;
 

@@ -37,9 +37,9 @@ add_executable(day02_MAIN day02.cpp)
 
 target_link_libraries(day02_MAIN PRIVATE AOC2023::Day02)
 
-# add_custom_command(
-#     TARGET day02_MAIN POST_BUILD
-#     COMMAND ${CMAKE_COMMAND} -E copy_directory
-#             ${CMAKE_CURRENT_SOURCE_DIR}/resources
-#             ${CMAKE_BINARY_DIR}/bin/resources
-# )
+add_custom_command(
+    TARGET day02_MAIN POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+            ${CMAKE_CURRENT_SOURCE_DIR}/resources
+            ${CMAKE_BINARY_DIR}/bin/resources
+)

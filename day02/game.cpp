@@ -14,7 +14,6 @@ Game::Game(const std::string &game_line)
 
         if (matches.size() == 2)
         {
-            std::cerr << matches[1].str() << '\n';
             id_ = std::stoi(matches[1].str());
         }
     }
@@ -51,6 +50,10 @@ int Game::green() const {
 
 int Game::red() const {
     return val_.at("red");
+}
+
+int Game::power() const {
+    return blue() * green() * red();
 }
 
 bool Game::is_valid(int red, int green, int blue) const {
