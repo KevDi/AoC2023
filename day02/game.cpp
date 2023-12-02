@@ -31,6 +31,19 @@ Game::Game(const std::string &game_line)
         }
         words_begin++;
     }
+
+    const std::regex green_reg{"\\s(\\d+)\\sgreen"};
+    std::sregex_token_iterator green_words_begin(game_line.begin(), game_line.end(), green_reg, 1);
+    const std::sregex_token_iterator green_words_end;
+
+
+    while(green_words_begin != green_words_end) {
+        int tmp_green = std::stoi(green_words_begin->str());
+        if (tmp_green > green_) {
+            green_ = tmp_green;
+        }
+        green_words_begin++;
+    }
 }
 
 int Game::id() const
@@ -41,4 +54,8 @@ int Game::id() const
 int Game::blue() const
 {
     return blue_;
+}
+
+int Game::green() const {
+    return green_;
 }

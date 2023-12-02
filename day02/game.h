@@ -8,11 +8,12 @@ public:
 
     int id() const;
     int blue() const;
+    int green() const;
 
 private:
 
     int id_;
     //int red_{0};
-    //int green_{0};
+    int green_{0};
     int blue_{0};
 };
