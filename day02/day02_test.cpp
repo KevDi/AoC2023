@@ -35,3 +35,9 @@ TEST(Day02, GameSetsRed) {
 
     ASSERT_THAT(game.red(), Eq(4));
 }
+
+TEST(Day02, GameIsValidIfNoColorIsGreaterThenTheGiven) {
+    Game game{GAME_ONE_LINE};
+
+    ASSERT_TRUE(game.is_valid(12,13,14));
+}

@@ -52,3 +52,7 @@ int Game::green() const {
 int Game::red() const {
     return val_.at("red");
 }
+
+bool Game::is_valid(int red, int green, int blue) const {
+    return val_.at("red") <= red && val_.at("green") <= green && val_.at("blue") <= blue;
+}

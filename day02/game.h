@@ -12,6 +12,8 @@ public:
     int green() const;
     int red() const;
 
+    bool is_valid(int red, int green, int blue) const;
+
 private:
 
     int id_;
