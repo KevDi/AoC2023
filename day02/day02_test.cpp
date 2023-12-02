@@ -24,6 +24,8 @@ TEST(Day02, GameSetsBlue) {
 
 TEST(Day03, GameSetsGreen) {
     Game game{GAME_ONE_LINE};
+    Game game_2{GAME_TWO_LINE};
 
     ASSERT_THAT(game.green(), Eq(2));
+    ASSERT_THAT(game_2.green(), Eq(3));
 }
