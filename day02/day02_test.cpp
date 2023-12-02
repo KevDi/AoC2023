@@ -22,10 +22,16 @@ TEST(Day02, GameSetsBlue) {
     ASSERT_THAT(game_2.blue(), Eq(2));
 }
 
-TEST(Day03, GameSetsGreen) {
+TEST(Day02, GameSetsGreen) {
     Game game{GAME_ONE_LINE};
     Game game_2{GAME_TWO_LINE};
 
     ASSERT_THAT(game.green(), Eq(2));
     ASSERT_THAT(game_2.green(), Eq(3));
+}
+
+TEST(Day02, GameSetsRed) {
+    Game game{GAME_ONE_LINE};
+
+    ASSERT_THAT(game.red(), Eq(4));
 }

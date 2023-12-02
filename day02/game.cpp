@@ -19,7 +19,7 @@ Game::Game(const std::string &game_line)
         }
     }
 
-    const std::regex blue_reg{"\\s(\\d+)\\s(blue|green)"};
+    const std::regex blue_reg{"\\s(\\d+)\\s(blue|green|red)"};
     int submatches[] = { 2, 1 };
     std::sregex_token_iterator words_begin(game_line.begin(), game_line.end(), blue_reg, submatches);
     const std::sregex_token_iterator words_end;
@@ -47,4 +47,8 @@ int Game::blue() const
 
 int Game::green() const {
     return val_.at("green");
+}
+
+int Game::red() const {
+    return val_.at("red");
 }
