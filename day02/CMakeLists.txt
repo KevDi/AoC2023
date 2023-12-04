@@ -4,7 +4,7 @@ if(CMAKE_SOURCE_DIR STREQUAL CMAKE_BINARY_DIR)
     message(FATAL_ERROR "Do not build in-source")
 endif()
 
-project("2" VERSION 1.0.0 LANGUAGES CXX)
+project("Day02" VERSION 1.0.0 LANGUAGES CXX)
 
 add_library(day02 game.h game.cpp)
 add_library("AOC2023::Day02" ALIAS "day02")
