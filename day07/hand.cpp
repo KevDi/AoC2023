@@ -29,7 +29,6 @@ Hand::Hand(const std::string& line, bool part_2) {
         if (matches.size() != 3) {
             throw std::invalid_argument{"Wrong input!"};
         }
-
         bid_ = std::stoi(matches[2]);
         auto hand = matches[1].str();
         hand_ = hand;
