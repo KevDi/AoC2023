@@ -4,6 +4,6 @@
         "conan": {}
     },
     "include": [
-        "/home/kev/Programming/cpp/AoC2023/build/Debug/generators/CMakePresets.json"
+        "C:\\Users\\djc3ho\\Documents\\Unterlagen\\Projekte\\programming\\cpp\\AoC2023\\build\\generators\\CMakePresets.json"
     ]
 }
